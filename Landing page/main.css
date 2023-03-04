@@ -1,0 +1,199 @@
+body {
+    background-image: url(images/background_img1.png), url(images/background_img2.png);
+    background-position: left bottom 130%, right top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+h1 {
+    padding: 0 0 40px 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    padding: 40px 0 40px 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.navbar-brand {
+    padding: 0px;
+    margin-top: -8px;
+}
+
+.nav-item {
+    margin-top: -60px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#zaloguj {
+    margin-right: 100px;
+    margin-top: -55px;
+    background-color: #F97914;
+    width: 180px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 40px;
+    border-style: none;
+}
+
+#zaloguj:hover {
+    background-color: #F7B138;
+
+}
+
+
+#section_img {
+    margin-top: -120px;
+}
+
+.range {
+    background-color: #F7B138;
+    border-radius: 40px;
+    padding: 40px;
+
+}
+
+.range:hover {
+    background-color: #F97914;
+
+}
+
+#otrzymaj_oferte {
+    background-color: #242730;
+    border-radius: 40px;
+    padding: 60px;
+    color: white;
+    width: 345px;
+    height: 220px;
+}
+
+#otrzymaj_oferte:hover {
+    background-color: #404554;
+}
+
+.item p {
+    display: inline-block;
+}
+
+.leftalign {
+    float: left;
+    width: 25%;
+}
+
+.rightalign {
+    text-align: right;
+    float: right;
+    width: 75%
+}
+
+
+input[type=range] {
+    width: 100%;
+    margin: 18.5px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background: #ffffff;
+    border: 1.1px solid #000000;
+    width: 100%;
+    height: 0px;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -19.6px;
+    width: 37px;
+    height: 37px;
+    background: #f9690e;
+    border: 9.9px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+}
+
+input[type=range]::-moz-range-track {
+    background: #ffffff;
+    border: 1.1px solid #000000;
+    width: 100%;
+    height: 0px;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 37px;
+    height: 37px;
+    background: #f9690e;
+    border: 9.9px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 18.5px 0;
+    color: transparent;
+    width: 100%;
+    height: 0px;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #c9c9c9;
+    border: 1.1px solid #000000;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ffffff;
+    border: 1.1px solid #000000;
+}
+
+input[type=range]::-ms-thumb {
+    width: 37px;
+    height: 37px;
+    background: #f9690e;
+    border: 9.9px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #ffffff;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ffffff;
+}
+
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+        margin: 0;
+        /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+}
